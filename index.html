@@ -21,7 +21,6 @@
 <meta property="og:url" content="https://accesstechnw.com/">
 <link rel="canonical" href="https://accesstechnw.com/">
 <link rel="preload" as="image" href="/images/mulcher-cleared-area.webp">
-<!-- TODO: replace with a real, branded 1200x630 social share image before launch (free stock placeholder for now) -->
 <meta property="og:image" content="https://accesstechnw.com/images/og-image.jpg">
 
 <!-- Twitter -->
@@ -50,9 +49,10 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- fonts self-hosted (latin subsets) — see /fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-400-800-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/hanken-grotesk-400-latin.woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
   :root{
     /* ---- palette ---- */
@@ -508,6 +508,8 @@
   a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,.btn:focus-visible{outline:2px solid var(--ember-dark);outline-offset:2px}
   .skip-link{position:absolute;left:-999px;top:0;z-index:300;background:var(--ember-dark);color:#fff;padding:.65rem 1rem;border-radius:0 0 6px 0;font-family:var(--font-sans);font-weight:600}
   .skip-link:focus{left:0}
+  /* defer rendering of below-the-fold sections (perf) */
+  #about,#services,#gallery,#why,#area,#estimate,.final,footer{content-visibility:auto;contain-intrinsic-size:auto 700px}
 </style>
 </head>
 <body>

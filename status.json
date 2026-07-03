@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-02T05:14:25Z",
+  "updatedAt": "2026-07-03T09:10:22Z",
   "phase": "prelaunch",
-  "headline": "Site built and form-verified on Vercel prod; launch gated on $1,500 payment, DNS, and protection/noindex flips",
+  "headline": "Site built, form-verified, fonts self-hosted, branded og-image; launch gated on $1,500 payment, DNS, protection/noindex flips",
   "next": [
     "Collect the $1,500 build fee and get accesstechnw.com DNS access (Squarespace)",
     "Flip launch gates: disable Deployment Protection, remove noindex, verify live",
