@@ -191,7 +191,7 @@
   .hero-bg .ph svg,.hero-bg .ph .ph-tag,.hero-bg .ph .ph-sub,
   .v2-hero-bg .ph svg,.v2-hero-bg .ph .ph-tag,.v2-hero-bg .ph .ph-sub{display:none}
   /* over real photos, drop the icon badge but keep the small caption as swap guidance */
-  .about-visual .ph svg,.area-map .ph svg{display:none}
+  .about-visual .ph svg,.about-visual .ph .ph-tag,.about-visual .ph .ph-sub,.area-map .ph svg{display:none}
   .hero-bg::after{
     content:"";position:absolute;inset:0;z-index:2;
     background:linear-gradient(180deg,rgba(13,28,20,.35) 0%,rgba(13,28,20,.25) 38%,rgba(13,28,20,.82) 80%,rgba(13,28,20,.96) 100%),
@@ -256,7 +256,6 @@
   .svc p{font-size:.96rem;color:var(--moss-300);line-height:1.6}
 
   /* ===================== BEFORE & AFTER ===================== */
-  .ba-note{display:inline-flex;align-items:center;gap:.5rem;background:rgba(47,143,78,.1);border:1px solid rgba(47,143,78,.25);color:var(--ember-dark);padding:.55rem 1rem;border-radius:2rem;font-size:.8rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:var(--s3)}
   .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
   .ba-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
   .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#fff}
@@ -286,6 +285,7 @@
   .area-tag{border:1px solid var(--line-light);border-radius:2rem;padding:.55rem 1rem;font-size:.88rem;color:#dfe7d8;display:flex;align-items:center;gap:.45rem}
   .area-tag svg{width:14px;height:14px;color:var(--ember-soft)}
   .area-map{position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line-light);background:var(--pine-950)}
+  .area-embed{position:absolute;inset:0;width:100%;height:100%;border:0}
   .area-map .ph{height:100%;background:linear-gradient(180deg,rgba(13,28,20,.32),rgba(13,28,20,.62)),#16291f;border-style:solid;border-color:var(--line-light)}
   .pin{position:absolute;display:flex;flex-direction:column;align-items:center;z-index:3;color:#fff}
   .pin .dot{width:14px;height:14px;border-radius:50%;background:var(--ember);box-shadow:0 0 0 6px rgba(47,143,78,.25);animation:pulse 2.4s infinite}
@@ -472,7 +472,6 @@
     .v2-cta-grid{grid-template-columns:1fr;gap:var(--s5)}
   }
   @media(max-width:680px){
-    body{padding-bottom:84px} /* clear fixed layout toggle */
     .brand-logo{height:34px}
     .v2-hero{min-height:72vh}
     /* full-screen overlay nav (Option 1) */
@@ -679,7 +678,6 @@
       <span class="eyebrow">The Proof</span>
       <h2>Before &amp; After</h2>
       <p>See the difference for yourself. These transformations are the clearest picture of what we do.</p>
-      <div class="ba-note">Our strongest selling point — featured front and center</div>
     </div>
     <div class="ba-grid">
       <div class="ba-card reveal">
@@ -755,13 +753,7 @@
         <a class="btn btn-primary" style="margin-top:var(--s4)" href="#estimate">Check My Area</a>
       </div>
       <div class="area-map reveal">
-        <div class="ph">
-          <i data-lucide="map"></i>
-          <div class="ph-tag">Service-Area Map</div>
-          <div class="ph-sub">Optional: a simple map of North ID / Eastern WA with your coverage area shaded.</div>
-        </div>
-        <div class="pin" style="top:38%;left:30%"><div class="dot"></div><div class="lbl">North Idaho</div></div>
-        <div class="pin" style="top:55%;left:62%"><div class="dot"></div><div class="lbl">Eastern WA</div></div>
+        <iframe class="area-embed" src="https://maps.google.com/maps?q=Coeur+d%27Alene,+ID&z=7&output=embed" title="Access Tech service area — North Idaho and Eastern Washington" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -809,14 +801,6 @@
           </select>
         </div>
         <div class="fld"><label>Description of Project <span class="req">*</span></label><textarea name="message" placeholder="Tell us what you're hoping to do — fuel reduction, cleanup, trails, access, etc." required></textarea></div>
-        <div class="fld"><label>Photo Upload <span class="opt">(optional)</span></label>
-          <label class="file-drop">
-            <i data-lucide="upload"></i>
-            <span>Add a photo of your property</span>
-            <small>JPG or PNG, up to 16MB</small>
-            <input type="file" name="attachment" accept="image/*" style="display:none">
-          </label>
-        </div>
         <button class="btn btn-primary" type="submit">
           Request My Free Estimate
           <i data-lucide="arrow-right"></i>
