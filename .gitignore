@@ -1,0 +1,9 @@
+# Local env — never commit real secrets.
+# Per the Hirobius Secrets Management Standard (hirobius/ops → standards/secrets-management.md):
+# repos hold env-var NAMES only (.env.example); values live in Bitwarden / gitignored .env.local.
+.env*
+!.env.example
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
