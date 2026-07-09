@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Tech — Forestry Mulching & Fuel Reduction | North Idaho & Eastern WA</title>
+<title>Access Tech — Fire Management & Land Stewardship | North Idaho & Eastern WA</title>
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/images/logo-icon.png">
 
 <!-- SEO -->
-<meta name="description" content="Professional forestry mulching, fuel reduction, and land improvement across North Idaho and Eastern Washington. Reduce wildfire risk and reclaim usable, maintainable land. Free on-site estimates.">
+<meta name="description" content="Fire management and land stewardship consulting with in-house implementation, across North Idaho and Eastern Washington. Science-based wildfire risk assessments, treatment plans, and the equipment to carry them out. Free on-site assessments.">
 
 <!-- PRE-LAUNCH: remove this robots tag at launch so the site can be indexed -->
 <meta name="robots" content="noindex,nofollow">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Access Tech — Forestry Mulching & Fuel Reduction | North Idaho & Eastern WA">
-<meta property="og:description" content="Professional forestry mulching, fuel reduction, and land improvement across North Idaho and Eastern Washington. Reduce wildfire risk and reclaim usable, maintainable land. Free on-site estimates.">
+<meta property="og:title" content="Access Tech — Fire Management & Land Stewardship | North Idaho & Eastern WA">
+<meta property="og:description" content="Fire management and land stewardship consulting with in-house implementation, across North Idaho and Eastern Washington. Science-based wildfire risk assessments, treatment plans, and the equipment to carry them out. Free on-site assessments.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://accesstechnw.com/">
 <link rel="canonical" href="https://accesstechnw.com/">
@@ -25,8 +25,8 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Access Tech — Forestry Mulching & Fuel Reduction | North Idaho & Eastern WA">
-<meta name="twitter:description" content="Professional forestry mulching, fuel reduction, and land improvement across North Idaho and Eastern Washington. Reduce wildfire risk and reclaim usable, maintainable land. Free on-site estimates.">
+<meta name="twitter:title" content="Access Tech — Fire Management & Land Stewardship | North Idaho & Eastern WA">
+<meta name="twitter:description" content="Fire management and land stewardship consulting with in-house implementation, across North Idaho and Eastern Washington. Science-based wildfire risk assessments, treatment plans, and the equipment to carry them out. Free on-site assessments.">
 <meta name="twitter:image" content="https://accesstechnw.com/images/og-image.jpg">
 
 <!-- Local SEO: LocalBusiness structured data -->
@@ -35,7 +35,7 @@
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
   "name":"Access Tech",
-  "description":"Professional forestry mulching, fuel reduction, and land improvement across North Idaho and Eastern Washington.",
+  "description":"Fire management and land stewardship consulting with in-house implementation across North Idaho and Eastern Washington — wildfire risk assessments, science-based treatment plans, forestry mulching and fuel reduction.",
   "url":"https://accesstechnw.com",
   "logo":"https://accesstechnw.com/images/logo-color.png",
   "image":"https://accesstechnw.com/images/og-image.jpg",
@@ -514,6 +514,18 @@
   .skip-link:focus{left:0}
   /* defer rendering of below-the-fold sections (perf) */
   #about,#services,#gallery,#why,#area,#estimate,.final,footer{content-visibility:auto;contain-intrinsic-size:auto 700px}
+  /* ---------- process ---------- */
+  .proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s2);margin-top:var(--s4)}
+  .proc{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.5rem 1.25rem;box-shadow:var(--shadow-sm)}
+  .proc .n{font-family:var(--font-display);font-weight:700;font-size:2rem;line-height:1;color:var(--ember);margin-bottom:.6rem}
+  .proc h3{font-family:var(--font-sans);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;margin-bottom:.4rem}
+  .proc p{font-size:.92rem;color:var(--ink-soft);line-height:1.55}
+  @media(max-width:1080px){.proc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.proc-grid{grid-template-columns:1fr}}
+  .checks{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chk{display:inline-flex;align-items:center;gap:.5rem;background:var(--bone);border:1px solid #cfc6b0;border-radius:999px;padding:.5rem .95rem;font-size:.9rem;color:var(--ink);cursor:pointer;font-weight:500}
+  .chk input{accent-color:var(--ember-dark);width:15px;height:15px;margin:0}
+  .chk:has(input:checked){border-color:var(--ember-dark);background:rgba(47,143,78,.08)}
 </style>
 </head>
 <body>
@@ -541,11 +553,12 @@
     <a class="brand" href="#top"><img class="brand-logo" src="/images/logo-white.png" alt="Access Tech — Land Management" width="170" height="65"></a>
     <nav class="menu" id="menu">
       <a href="#about">About</a>
+      <a href="#process">Process</a>
       <a href="#services">Services</a>
       <a href="#gallery">Before &amp; After</a>
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
-      <a class="btn btn-primary nav-cta" href="#estimate">Request a Free Estimate <i data-lucide="arrow-right"></i></a>
+      <a class="btn btn-primary nav-cta" href="#estimate">Request a Free Assessment <i data-lucide="arrow-right"></i></a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -564,15 +577,15 @@
   </div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow light">North Idaho &amp; Eastern Washington</span>
-      <h1>Professional Forestry Mulching <span class="accent">&amp; Fuel Reduction</span></h1>
-      <p class="lead sub">Helping landowners reclaim, restore, and protect their property — reducing wildfire risk and creating usable, maintainable land. Not simply clearing it.</p>
+      <span class="eyebrow light">Fire Management &amp; Land Stewardship — North Idaho &amp; Eastern Washington</span>
+      <h1>Reclaim. Restore. <span class="accent">Protect.</span></h1>
+      <p class="lead sub">We help landowners understand their wildfire risk and manage their land for the long term — science-based assessments and treatment plans, implemented with our own equipment. Advisors first, operators second.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#estimate">
-          Request a Free Estimate
+          Request a Free Assessment
           <i data-lucide="arrow-right"></i>
         </a>
-        <a class="btn btn-ghost" href="#services">View Services</a>
+        <a class="btn btn-ghost" href="#process">See Our Process</a>
       </div>
     </div>
   </div>
@@ -584,7 +597,7 @@
     <div class="trust-item"><i data-lucide="graduation-cap"></i><b>Degreed Forester</b></div>
     <div class="trust-item"><i data-lucide="shield"></i><b>Wildfire-Risk Focused</b></div>
     <div class="trust-item"><i data-lucide="map-pin"></i><b>Local to ID &amp; WA</b></div>
-    <div class="trust-item"><i data-lucide="clipboard-check"></i><b>Free On-Site Estimates</b></div>
+    <div class="trust-item"><i data-lucide="clipboard-check"></i><b>Free On-Site Assessments</b></div>
   </div>
 </section>
 
@@ -594,8 +607,8 @@
     <div class="about-grid">
       <div class="about-copy reveal">
         <span class="eyebrow">About Access Tech</span>
-        <p class="lead">Professional forestry knowledge, backed by real field experience.</p>
-        <p class="body">Access Tech specializes in forestry mulching, fuel reduction, and land improvement services across North Idaho and Eastern Washington. What sets us apart is a professional forestry background combined with hands-on field experience.</p>
+        <p class="lead">Trusted advisors who happen to own the equipment.</p>
+        <p class="body">Access Tech provides fire management and land stewardship consulting — with in-house implementation — across North Idaho and Eastern Washington. We don't sell machine time. We help landowners assess wildfire risk, understand their property's condition, and manage their land for the long term.</p>
         <p class="body">Our work is guided by formal training in Forest Resource Management and Fire Ecology &amp; Management, and ongoing professional work in the forestry industry. The goal is simple: give landowners effective, practical solutions that improve the health, usability, and safety of their property.</p>
         <div class="creds">
           <div class="cred"><div class="k">Degree</div><div class="v">Forest Resource Management</div></div>
@@ -613,14 +626,33 @@
   </div>
 </section>
 
+
+<!-- ============ PROCESS ============ -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2>Evaluate first. Prescribe second. Implement third.</h2>
+      <p>Land stewardship is a process, not a one-time job. Every property starts with an assessment — the equipment comes later.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc reveal"><div class="n">01</div><h3>Assess</h3><p>We walk your property and evaluate wildfire risk, fuels, forest health, and existing conditions.</p></div>
+      <div class="proc reveal"><div class="n">02</div><h3>Prescribe</h3><p>You get practical, science-based treatment recommendations — grounded in forestry, not a sales pitch.</p></div>
+      <div class="proc reveal"><div class="n">03</div><h3>Prioritize</h3><p>Projects are sequenced by wildfire risk, forest health, and your objectives and budget.</p></div>
+      <div class="proc reveal"><div class="n">04</div><h3>Implement</h3><p>We carry out the treatments with our in-house equipment — or trusted partners for specialized work.</p></div>
+      <div class="proc reveal"><div class="n">05</div><h3>Maintain</h3><p>We monitor results and recommend long-term maintenance cycles that keep your land protected.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ SERVICES ============ -->
 <section class="sec dark" id="services">
   <div class="topo"></div>
   <div class="wrap" style="position:relative">
     <div class="sec-head center reveal">
-      <span class="eyebrow light">What We Do</span>
+      <span class="eyebrow light">Implementation</span>
       <h2>Services</h2>
-      <p>From overgrown understory to defensible space, we handle the full range of forestry and land-improvement work.</p>
+      <p>When a treatment plan calls for equipment, we do the work ourselves — the full range of forestry and land-improvement services, in-house or with trusted partners.</p>
     </div>
     <div class="svc-grid">
       <div class="svc reveal">
@@ -712,7 +744,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Why Access Tech</span>
       <h2>Built on knowledge, proven in the field</h2>
-      <p>This isn't just land clearing. It's land management done by someone who understands the forest.</p>
+      <p>This isn't equipment for hire. It's risk reduction and property stewardship, guided by someone who understands the forest.</p>
     </div>
     <div class="why-grid">
       <div class="why reveal">
@@ -765,8 +797,8 @@
     <div class="est-grid">
       <div class="est-side reveal">
         <span class="eyebrow">Get Started</span>
-        <h2>Request a free estimate</h2>
-        <p>Tell us about your property and project. Send a few photos if you can — it helps us give you a faster, more accurate estimate.</p>
+        <h2>Start with a free assessment</h2>
+        <p>Tell us about your property, its conditions, and your goals. We evaluate first, prescribe second, and implement third — this gives us what we need to begin.</p>
         <a class="phone-card" href="tel:2085008988">
           <i data-lucide="phone"></i>
           <div><div class="pk">Idaho</div><div class="pv">208-500-8988</div></div>
@@ -780,7 +812,7 @@
       <form class="est" id="estimate-form" action="https://api.web3forms.com/submit" method="POST">
         <!-- Web3Forms access key (routes submissions to adrian@hirobius.com) -->
         <input type="hidden" name="access_key" value="31719ab4-ebe8-484a-88bc-ed84acbc8b89">
-        <input type="hidden" name="subject" value="New estimate request — Access Tech website">
+        <input type="hidden" name="subject" value="New property assessment request — Access Tech website">
         <input type="hidden" name="from_name" value="Access Tech Website">
         <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
         <div class="frow">
@@ -788,7 +820,7 @@
           <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" placeholder="(208) 000-0000" required></div>
         </div>
         <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" placeholder="you@email.com" required></div>
-        <div class="fld"><label>Property Address</label><input type="text" name="address" placeholder="Street, city, state"></div>
+        <div class="fld"><label>Property Location <span class="req">*</span></label><input type="text" name="address" placeholder="Address or general area (city / county)" required></div>
         <div class="fld"><label>Approximate Acreage</label>
           <select name="acreage">
             <option value="" disabled selected>Select acreage</option>
@@ -800,9 +832,27 @@
             <option>Not sure</option>
           </select>
         </div>
-        <div class="fld"><label>Description of Project <span class="req">*</span></label><textarea name="message" placeholder="Tell us what you're hoping to do — fuel reduction, cleanup, trails, access, etc." required></textarea></div>
+        <div class="fld"><label>Primary Objectives</label>
+          <div class="checks">
+            <label class="chk"><input type="checkbox" name="objectives" value="Wildfire risk reduction">Wildfire risk reduction</label>
+            <label class="chk"><input type="checkbox" name="objectives" value="Defensible space around structures">Defensible space</label>
+            <label class="chk"><input type="checkbox" name="objectives" value="Forest health / thinning">Forest health &amp; thinning</label>
+            <label class="chk"><input type="checkbox" name="objectives" value="Access, trails and clearing">Access, trails &amp; clearing</label>
+            <label class="chk"><input type="checkbox" name="objectives" value="Long-term stewardship plan">Long-term stewardship plan</label>
+          </div>
+        </div>
+        <div class="fld"><label>Timeline</label>
+          <select name="timeline">
+            <option value="" disabled selected>When are you hoping to start?</option>
+            <option>As soon as possible</option>
+            <option>This season</option>
+            <option>Next 6–12 months</option>
+            <option>Planning ahead</option>
+          </select>
+        </div>
+        <div class="fld"><label>Property Conditions &amp; Goals <span class="req">*</span></label><textarea name="message" placeholder="Describe your property and what you want from it — current conditions, concerns like fire risk or overgrowth, and your long-term goals." required></textarea></div>
         <button class="btn btn-primary" type="submit">
-          Request a Free Estimate
+          Request a Free Assessment
           <i data-lucide="arrow-right"></i>
         </button>
         <p class="form-foot" id="estimate-status">We'll get back to you quickly — usually within a day or two.</p>
@@ -815,8 +865,8 @@
 <section class="final">
   <div class="wrap">
     <h2>Reclaim, restore &amp; protect your land</h2>
-    <p>Reduce wildfire risk and turn overgrown ground into usable space. Reach out today for a free, no-pressure estimate.</p>
-    <a class="btn btn-dark" href="#estimate">Request a Free Estimate <i data-lucide="arrow-right"></i></a>
+    <p>Know your wildfire risk and put a long-term plan behind your property. Start with a free, no-pressure assessment.</p>
+    <a class="btn btn-dark" href="#estimate">Request a Free Assessment <i data-lucide="arrow-right"></i></a>
   </div>
 </section>
 
@@ -826,7 +876,7 @@
     <div class="foot-grid">
       <div>
         <a class="brand" href="#top"><img class="brand-logo" src="/images/logo-white.png" alt="Access Tech — Land Management" width="170" height="65"></a>
-        <p>Forestry mulching, fuel reduction, and land improvement throughout North Idaho and Eastern Washington. Reclaim, restore, and protect your property.</p>
+        <p>Fire management and land stewardship consulting — with in-house implementation — throughout North Idaho and Eastern Washington. Reclaim, restore, protect.</p>
       </div>
       <div>
         <h5>Explore</h5>
@@ -840,7 +890,7 @@
         <h5>Contact</h5>
         <a class="fl" href="tel:2085008988">Idaho — 208-500-8988</a>
         <a class="fl" href="tel:5097890371">Washington — 509-789-0371</a>
-        <a class="fl" href="#estimate">Request a Free Estimate</a>
+        <a class="fl" href="#estimate">Request a Free Assessment</a>
         <a class="fl" href="https://accesstechnw.com">accesstechnw.com</a>
         <a class="fl" href="/privacy.html">Privacy Policy</a>
       </div>
@@ -905,7 +955,7 @@
         <h1>Forestry Mulching <span class="accent">&amp; Wildfire Fuel Reduction</span></h1>
         <p class="lead">Reclaim, restore, and protect your land — guided by a degreed forester who understands how your forest actually works.</p>
         <div class="v2-actions">
-          <a class="btn v2-btn" href="#v2-estimate">Request a Free Estimate</a>
+          <a class="btn v2-btn" href="#v2-estimate">Request a Free Assessment</a>
           <a class="btn v2-btn-ghost" href="tel:2085008988">Call 208-500-8988</a>
         </div>
         <ul class="v2-points">
@@ -1065,7 +1115,7 @@
           </div>
           <div class="fld"><label>Description of Project <span class="req">*</span></label><textarea placeholder="Fuel reduction, cleanup, trails, access, etc." required></textarea></div>
           <button class="btn v2-btn" type="submit">
-            Request a Free Estimate
+            Request a Free Assessment
             <i data-lucide="arrow-right"></i>
           </button>
           <p class="form-foot">We'll get back to you quickly — usually within a day or two.</p>

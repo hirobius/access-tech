@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-06T01:24:28Z",
+  "updatedAt": "2026-07-09T20:29:15Z",
   "phase": "prelaunch",
-  "headline": "Site built, form-verified, fonts self-hosted, branded og-image; launch gated on $1,500 payment, DNS, protection/noindex flips",
+  "headline": "Repositioned per Phil's brief: fire management / land stewardship consulting + 5-step process + assessment-first form; launch unblocked (Squarespace creds received)",
   "next": [
-    "Collect the $1,500 build fee and get accesstechnw.com DNS access (Squarespace)",
-    "Flip launch gates: disable Deployment Protection, remove noindex, verify live",
-    "Swap Phil's real before/after photos into the gallery"
+    "Process Phil's new photo batch + layout reference (need upload)",
+    "Point accesstechnw.com DNS (creds in hand) + launch flips",
+    "Collect the $1,500 build fee"
   ],
   "blocked": [
-    "Before/after gallery + service-area imagery await client photo pairs",
-    "DNS access to accesstechnw.com (client's Squarespace account)"
+    "Phil's new photos/layout attachments not yet uploaded to a session",
+    "Hero shot still coming from Phil"
   ]
 }
