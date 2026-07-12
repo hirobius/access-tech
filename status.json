@@ -1,14 +1,11 @@
 {
-  "updatedAt": "2026-07-09T20:29:15Z",
+  "updatedAt": "2026-07-12T23:52:17Z",
   "phase": "prelaunch",
-  "headline": "Repositioned per Phil's brief: fire management / land stewardship consulting + 5-step process + assessment-first form; launch unblocked (Squarespace creds received)",
+  "headline": "Repositioned + real photos throughout (hero, about, full gallery); launch gated on $1,500 + DNS flips",
   "next": [
-    "Process Phil's new photo batch + layout reference (need upload)",
-    "Point accesstechnw.com DNS (creds in hand) + launch flips",
-    "Collect the $1,500 build fee"
+    "Adrian: launch flips (DNS via Squarespace creds, protection off, noindex out)",
+    "Collect the $1,500 build fee",
+    "Optional: dedicated hero shot from Phil when it arrives"
   ],
-  "blocked": [
-    "Phil's new photos/layout attachments not yet uploaded to a session",
-    "Hero shot still coming from Phil"
-  ]
+  "blocked": []
 }

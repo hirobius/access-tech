@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://accesstechnw.com/">
 <link rel="canonical" href="https://accesstechnw.com/">
-<link rel="preload" as="image" href="/images/mulcher-cleared-area.webp">
+<link rel="preload" as="image" href="/images/hero-stewardship.webp">
 <meta property="og:image" content="https://accesstechnw.com/images/og-image.jpg">
 
 <!-- Twitter -->
@@ -184,7 +184,7 @@
   /* ===================== HERO ===================== */
   .hero{min-height:92vh;display:flex;align-items:flex-end;color:#fff;position:relative;background:var(--pine-900);overflow:hidden}
   .hero-bg{position:absolute;inset:0;z-index:0}
-  .hero-bg .ph{position:absolute;inset:0;height:100%;border:none;background:url("/images/mulcher-cleared-area.webp") center/cover no-repeat,#1c2a22;z-index:0}
+  .hero-bg .ph{position:absolute;inset:0;height:100%;border:none;background:url("/images/hero-stewardship.webp") center/cover no-repeat,#1c2a22;z-index:0}
   /* looping background video sits above the placeholder; if it fails to load the .ph shows through */
   .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
   /* keep the gradient backdrop but drop the placeholder label/icon sitting behind the hero copy */
@@ -260,6 +260,7 @@
   .ba-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
   .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#fff}
   .ba-pair .ph{aspect-ratio:1/1;justify-content:flex-end}
+  .ba-single img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
   .ba-shot{position:relative}
   .ba-shot img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
   .ba-pair .ph.before{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(13,28,20,.6)),#1c3322}
@@ -573,7 +574,7 @@
       <div class="ph-sub">Drop in a short looping clip — a mulcher working a lot, or slow drone footage over cleared land.</div>
     </div>
     <!-- Hero background. The photo poster fills the space now; to go animated later, add a <source src="/hero.mp4" type="video/mp4"> inside this <video>. -->
-    <video class="hero-video" autoplay muted loop playsinline poster="/images/mulcher-cleared-area.webp"></video>
+    <video class="hero-video" autoplay muted loop playsinline poster="/images/hero-stewardship.webp"></video>
   </div>
   <div class="wrap">
     <div class="hero-inner">
@@ -616,7 +617,7 @@
         </div>
       </div>
       <div class="about-visual reveal">
-        <img class="about-photo" src="/images/mulcher-at-work.webp" alt="Access Tech skid steer with forestry mulcher head on a freshly cleared lot" width="1000" height="1333" loading="lazy">
+        <img class="about-photo" src="/images/about-equipment.webp" alt="Access Tech ASV RT-120 with Fecon forestry mulcher head in a thinned, healthy stand" width="900" height="1200" loading="lazy">
         <div class="about-badge">
           <div class="n">Practical</div>
           <div class="t">Results that last</div>
@@ -721,18 +722,12 @@
         <div class="ba-cap"><h4>Brush Reclaim — North Idaho</h4><p>Dense, dry brush mulched down to clean, walkable ground — healthy trees left standing.</p></div>
       </div>
       <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ph before"><span class="ba-flag b">Before</span><div class="ph-sub">Heavy understory</div></div>
-          <div class="ph after"><span class="ba-flag a">After</span><div class="ph-sub">Defensible space</div></div>
-        </div>
-        <div class="ba-cap"><h4>Project Name / Location</h4><p>One line on what changed — e.g. "Fuel reduction around a rural home."</p></div>
+        <div class="ba-single"><img src="/images/ba2-defensible.webp" alt="Defensible space around a rural home — understory cleared, healthy trees retained" width="1200" height="750" loading="lazy"></div>
+        <div class="ba-cap"><h4>Defensible Space — Rural Home</h4><p>Ladder fuels and dense understory cleared around the home site — fire-resilient, park-like, and easy to maintain.</p></div>
       </div>
       <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ph before"><span class="ba-flag b">Before</span><div class="ph-sub">Blocked access</div></div>
-          <div class="ph after"><span class="ba-flag a">After</span><div class="ph-sub">Clear trail</div></div>
-        </div>
-        <div class="ba-cap"><h4>Project Name / Location</h4><p>One line on what changed — e.g. "New access trail opened to back acreage."</p></div>
+        <div class="ba-single"><img src="/images/ba3-thinning.webp" alt="Thinned forest stand with mulched ground fuels and open walkable understory" width="1200" height="750" loading="lazy"></div>
+        <div class="ba-cap"><h4>Thinning &amp; Fuels Reduction</h4><p>An overstocked stand brought back to healthy spacing — ground fuels mulched in place, access restored.</p></div>
       </div>
     </div>
   </div>
