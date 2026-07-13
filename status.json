@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-07-12T23:56:13Z",
+  "updatedAt": "2026-07-13T00:38:46Z",
   "phase": "prelaunch",
   "headline": "Content-complete: 3 real before/after pairs, sunny hero, equipment About; launch gated on $1,500 + DNS flips",
   "next": [
-    "Adrian: launch flips (DNS via Squarespace creds, protection off, noindex out)",
-    "Collect the $1,500 build fee",
-    "Optional: dedicated hero shot from Phil when it arrives"
+    "Site-engine rebuild pilot: open session on hirobius/site-engine with content/access-tech.json + migration brief",
+    "Adrian: launch flips for the static build (DNS, protection, noindex) + collect $1,500",
+    "Swap dedicated hero shot if Phil sends one"
   ],
   "blocked": []
 }
