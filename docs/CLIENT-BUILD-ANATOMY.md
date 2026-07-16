@@ -345,32 +345,25 @@ before launch; "Defer" = add when templatizing (Phase 1).
 
 ---
 
-## 9. Open items / gaps (cross-checked vs BACKLOG.md & README)
+## 9. Open items / gaps
 
-**Still open in code (verified against `index.html`):**
-- `<meta name="robots" content="noindex,nofollow">` **still present** (pre-launch).
-- **Two layouts + toggle still shipped** (`#layout-two`, `.vtoggle`, all `.v2-*` CSS/JS).
-- **Both font pairs still loaded** (Google Bricolage/Hanken + Fontshare Cabinet/Satoshi).
-- **Gallery before/after + service-area map still hot-link LoremFlickr** — the "self-host all
-  images" task is only partially done (hero/about/logos/og are self-hosted; gallery is not).
-- Gallery captions are still placeholders ("Project Name / Location", LoremFlickr `lock=64/65`).
-- `og:image` carries a "free stock placeholder for now" TODO — needs a real branded image.
-- Option 2's form is a non-functional `alert()` preview (irrelevant once Option 2 is deleted).
+> Superseded 2026-07-16 (site launched). This was a pre-launch snapshot. The live task
+> source of truth is **GitHub Issues** (fleet convention) plus **BACKLOG.md**; kept here
+> only for the few items still genuinely open in code.
 
-**Backlog Phase 0 items not yet reflected in code:**
-- robots.txt / sitemap.xml / canonical (none present).
-- Accessibility pass (CSS-background photos lack `alt`).
-- README launch checklist is unticked (form delivery test, photo swap, toggle removal, domain
-  pointing, noindex removal, Vercel protection off, OG/JSON-LD URL verification, promote to `main`).
+**Resolved since the snapshot:** noindex removed at launch; fonts self-hosted (latin subsets,
+no Google Fonts); gallery + service-area map now real (photos + embedded Google map, no
+LoremFlickr); layout toggle removed; robots.txt / sitemap.xml / canonical added; accessibility
+pass done (real `<img>` + alt, focus-visible, AA contrast); og:image is a real branded graphic;
+privacy.html + 404.html added; domain pointed at Vercel, Deployment Protection off.
 
-**Backend / platform (deferred per backlog, noted for completeness):**
-- Billing: Phil's $1,500 build invoice not yet collected; standard recurring pricing model still to be defined.
-- Analytics / call tracking — none (Phase 1).
-- Privacy policy — required on every client site (item 11), not present.
-- CMS deliberately **not** built (request-based + AI is the chosen model).
+**Still open in code (see issues #12, #13, #14):**
+- Parked Option 2 layout (`#layout-two`, all `.v2-*`) still ships, and `--ember*` / `--leaf*`
+  are now identical greens. Delete Option 2 and collapse to one token set (#14, parked pending
+  Adrian). This also clears the old token-naming ambiguity: Option 1 runs on the recolored
+  `--ember` tokens, so the surviving set should get an unambiguous name.
+- Lucide still loads from the jsDelivr CDN; self-host it locally (#12; fonts already done).
+- Minify + lazy-load below-the-fold (#13, minor).
 
-**Discrepancy worth resolving:** README/ARCHITECTURE describe Option 1 as "green/Full" and the
-green pair as the keeper, but the *code* ships Option 1 on the recolored `--ember` (orange-origin)
-tokens with Bricolage+Hanken, and Option 2 on the native `--leaf` tokens with Cabinet+Satoshi.
-Net visual result is green either way, but the docs and the token naming disagree — clean this up
-when stripping to one layout so the surviving token set has an unambiguous name.
+**Business / post-launch (BACKLOG sections 1-4):** invoice the $1,500; swap the form key to Phil;
+Search Console + Google Business Profile; analytics; define the standard recurring pricing.
